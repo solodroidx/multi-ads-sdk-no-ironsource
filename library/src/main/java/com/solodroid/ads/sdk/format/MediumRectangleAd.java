@@ -326,6 +326,11 @@ public class MediumRectangleAd {
                             }
 
                             @Override
+                            public void onBannerShown(BannerView bannerAdView) {
+
+                            }
+
+                            @Override
                             public void onBannerClick(BannerView bannerView) {
 
                             }
@@ -614,6 +619,11 @@ public class MediumRectangleAd {
                             }
 
                             @Override
+                            public void onBannerShown(BannerView bannerAdView) {
+
+                            }
+
+                            @Override
                             public void onBannerClick(BannerView bannerView) {
 
                             }
@@ -725,6 +735,7 @@ public class MediumRectangleAd {
 
                     case IRONSOURCE:
                     case FAN_BIDDING_IRONSOURCE:
+                        ironSourceBannerView = activity.findViewById(R.id.ironsource_banner_view_container);
 
                         break;
                 }
@@ -735,11 +746,7 @@ public class MediumRectangleAd {
         }
 
         public void destroyAndDetachBanner() {
-            if (adStatus.equals(AD_STATUS_ON) && placementStatus != 0) {
-                if (adNetwork.equals(IRONSOURCE) || backupAdNetwork.equals(IRONSOURCE)) {
 
-                }
-            }
         }
 
     }

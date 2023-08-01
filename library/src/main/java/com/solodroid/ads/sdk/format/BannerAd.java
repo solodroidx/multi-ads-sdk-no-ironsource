@@ -336,6 +336,11 @@ public class BannerAd {
                             }
 
                             @Override
+                            public void onBannerShown(BannerView bannerAdView) {
+
+                            }
+
+                            @Override
                             public void onBannerClick(BannerView bannerView) {
 
                             }
@@ -652,6 +657,11 @@ public class BannerAd {
                             }
 
                             @Override
+                            public void onBannerShown(BannerView bannerAdView) {
+
+                            }
+
+                            @Override
                             public void onBannerClick(BannerView bannerView) {
 
                             }
@@ -800,11 +810,7 @@ public class BannerAd {
         }
 
         public void destroyAndDetachBanner() {
-            if (adStatus.equals(AD_STATUS_ON) && placementStatus != 0) {
-                if (adNetwork.equals(IRONSOURCE) || backupAdNetwork.equals(IRONSOURCE)) {
 
-                }
-            }
         }
 
     }

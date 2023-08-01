@@ -21,6 +21,6 @@ dependencyResolutionManagement {
         }
     }
 }
-rootProject.name = "MultiAdsSdk"
+rootProject.name = "MultiAdsSdkNoIronSource"
 include ':demo'
 include ':library'
